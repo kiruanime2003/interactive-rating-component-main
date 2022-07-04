@@ -1,0 +1,160 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+  background-color: $veryDarkBlue;
+  font-family: "Overpass", sans-serif;
+}
+
+#box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(180deg, #222933, #161e29);
+  padding: 30px;
+  border-radius: 5%;
+}
+
+#star-bg {
+  border-radius: 50%;
+  background-color: hsla(217, 12%, 63%, 0.075);
+  width: 45px;
+  height: 45px;
+
+  svg {
+    position: relative;
+    top: 30%;
+    left: 30%;
+  }
+}
+
+h1 {
+  color: $white;
+  margin: 30px 0 15px 0;
+  font-weight: 700;
+}
+
+#sentence {
+  color: $lightGrey;
+  font-size: 15px;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: left;
+  width: 340px;
+  line-height: 1.7;
+}
+
+#rating
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0 35px 0;
+}
+
+.number
+{
+    background-color: hsla(217, 12%, 63%, 0.109);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $lightGrey;
+    font-weight: 700;
+}
+
+.number:hover
+{
+    cursor: pointer;
+    background-color: $orange;
+    color: $white;
+}
+
+.active{
+  background-color: $lightGrey;
+  color: $white;
+}
+
+a
+{
+    background-color: $orange;
+    color: $white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 2%;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+a:hover
+{
+    background-color: $white;
+    color: $orange;
+    cursor: pointer;
+}
+
+#box1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(180deg, #222933, #161e29);
+  padding: 30px;
+  border-radius: 5%;
+}
+
+#svg1{
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#h1{
+  color: $orange;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #222f3f;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+#h2{
+    color: $white;
+    text-align: center;
+    margin: 35px 0 8px 0;
+    font-size: 25px;
+}
+
+#h3{
+    color: $lightGrey;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    word-wrap: break-word;
+    width: 340px;
+    line-height: 1.6;
+}
+
