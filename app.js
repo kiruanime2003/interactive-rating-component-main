@@ -1,6 +1,6 @@
 var ratingNumber = document.getElementsByClassName('number');
 var ratingNumberArray = Array.from(ratingNumber);//converting html collection to array
-var SELECTED_RATING;
+var SELECTED_RATING=3;
 var selectedStar = document.getElementById("user-rating");
 var submitButton = document.getElementById("submit");
 
@@ -17,7 +17,6 @@ function ratingCalc(event)
 submitButton.addEventListener("click", function(){
     document.getElementById("box1").hidden = false;
     document.getElementById("box").hidden = true;
-
 }, false);
 
 
